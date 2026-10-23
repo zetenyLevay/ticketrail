@@ -7,6 +7,8 @@ plugins {
 
 kotlin {
     jvm()
+    linuxX64()
+    linuxArm64()
     
     android {
        namespace = "dev.zeteny.ticketrail.core"
