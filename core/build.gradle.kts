@@ -56,4 +56,6 @@ room3 {
 dependencies {
     add("kspAndroid", libs.room.compiler)
     add("kspJvm", libs.room.compiler)
+    add("kspLinuxX64", libs.room.compiler)
+    add("kspLinuxArm64", libs.room.compiler)
 }
