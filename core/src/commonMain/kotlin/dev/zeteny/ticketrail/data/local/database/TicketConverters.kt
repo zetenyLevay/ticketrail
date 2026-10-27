@@ -1,7 +1,6 @@
 package dev.zeteny.ticketrail.data.local.database
 
 import androidx.room3.ColumnTypeConverter
-import dev.zeteny.ticketrail.data.model.Status
 import dev.zeteny.ticketrail.data.model.Subtask
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.json.Json
@@ -31,13 +30,6 @@ class TicketConverters {
 
     @ColumnTypeConverter
     fun toSubtasks(value: String): List<Subtask> = Json.decodeFromString(value)
-
-
-    @ColumnTypeConverter
-    fun fromStatus(value: Status): String = Json.encodeToString(value)
-
-    @ColumnTypeConverter
-    fun toStatus(value: String): Status = Json.decodeFromString(value)
 
     @ColumnTypeConverter
     fun fromJsonObject(value: JsonObject): String = Json.encodeToString(value)

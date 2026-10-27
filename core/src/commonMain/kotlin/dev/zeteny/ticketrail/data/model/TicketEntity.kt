@@ -36,7 +36,7 @@ enum class Status{
 @Serializable
 @Entity(tableName = "tickets_db")
 @ColumnTypeConverters(TicketConverters::class)
-data class Ticket(
+data class TicketEntity(
     @ColumnInfo(name = "id") @PrimaryKey val id: String,
     @ColumnInfo(name = "kind") val kind: TicketKind,
     @SerialName("note_type") @ColumnInfo(name = "note_type") val noteType: String? = null,
