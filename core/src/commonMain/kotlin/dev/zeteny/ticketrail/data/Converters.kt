@@ -1,12 +1,11 @@
-package dev.zeteny.ticketrail.data.local.database
+package dev.zeteny.ticketrail.data
 
 import androidx.room3.ColumnTypeConverter
-import dev.zeteny.ticketrail.data.model.Subtask
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
 
-class TicketConverters {
+class Converters {
     @ColumnTypeConverter
     fun fromLocalDate(value: LocalDate?): String? = value?.toString()
 

@@ -1,10 +1,9 @@
-package dev.zeteny.ticketrail.data.model
+package dev.zeteny.ticketrail.data
 
 import androidx.room3.ColumnInfo
 import androidx.room3.ColumnTypeConverters
 import androidx.room3.Entity
 import androidx.room3.PrimaryKey
-import dev.zeteny.ticketrail.data.local.database.TicketConverters
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -35,7 +34,7 @@ enum class Status{
 
 @Serializable
 @Entity(tableName = "tickets_db")
-@ColumnTypeConverters(TicketConverters::class)
+@ColumnTypeConverters(Converters::class)
 data class TicketEntity(
     @ColumnInfo(name = "id") @PrimaryKey val id: String,
     @ColumnInfo(name = "kind") val kind: TicketKind,

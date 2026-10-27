@@ -1,14 +1,14 @@
 package dev.zeteny.ticketrail.data.local.database
 
-import dev.zeteny.ticketrail.data.model.Status
-import dev.zeteny.ticketrail.data.model.Subtask
-import dev.zeteny.ticketrail.data.model.TicketEntity
-import dev.zeteny.ticketrail.data.model.TicketKind
+import dev.zeteny.ticketrail.data.Status
+import dev.zeteny.ticketrail.data.Subtask
+import dev.zeteny.ticketrail.data.TicketEntity
+import dev.zeteny.ticketrail.data.TicketKind
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.buildJsonObject
 
-/** A ticket with every converted column filled in, so a round trip exercises all of [TicketConverters]. */
+/** A ticket with every converted column filled in, so a round trip exercises all of [dev.zeteny.ticketrail.data.Converters]. */
 fun sampleTicket(id: String = "t142") = TicketEntity(
     id = id,
     kind = TicketKind.LINE,

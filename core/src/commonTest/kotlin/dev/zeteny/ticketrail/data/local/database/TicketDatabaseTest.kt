@@ -1,5 +1,7 @@
 package dev.zeteny.ticketrail.data.local.database
 
+import dev.zeteny.ticketrail.data.TicketDatabase
+import dev.zeteny.ticketrail.data.getRoomDatabase
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import kotlin.test.AfterTest

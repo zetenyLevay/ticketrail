@@ -2,6 +2,7 @@ package dev.zeteny.ticketrail.data.local.database
 
 import androidx.room3.Room
 import androidx.room3.RoomDatabase
+import dev.zeteny.ticketrail.data.TicketDatabase
 import kotlinx.cinterop.ExperimentalForeignApi
 import kotlinx.cinterop.toKString
 import okio.FileSystem

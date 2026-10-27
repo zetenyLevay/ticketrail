@@ -1,9 +1,8 @@
-package dev.zeteny.ticketrail.data.local.dao
+package dev.zeteny.ticketrail.data
 
 import androidx.room3.Dao
 import androidx.room3.Insert
 import androidx.room3.Query
-import dev.zeteny.ticketrail.data.model.TicketEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
