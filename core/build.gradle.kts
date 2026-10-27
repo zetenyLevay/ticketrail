@@ -59,3 +59,11 @@ dependencies {
     add("kspLinuxX64", libs.room.compiler)
     add("kspLinuxArm64", libs.room.compiler)
 }
+
+// BundledSQLiteDriver only ships native libs for Android ABIs, so database tests can't run on the
+// host JVM. They still compile for Android; jvmTest and linuxX64Test cover the behaviour.
+tasks.withType<Test>().matching { it.name == "testAndroidHostTest" }.configureEach {
+    filter.excludeTestsMatching("dev.zeteny.ticketrail.data.local.database.*")
+    // Nothing else lives in androidHostTest yet; drop this once it has its own tests.
+    filter.isFailOnNoMatchingTests = false
+}
