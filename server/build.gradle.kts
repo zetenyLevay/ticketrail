@@ -13,20 +13,20 @@ kotlin {
         @OptIn(ExperimentalKotlinGradlePluginApi::class)
         binaries {
             executable {
-                mainClass.set("dev.zeteny.ticketrail.ApplicationKt")
+                mainClass.set("dev.zeteny.ticketrail.server.ApplicationKt")
             }
         }
     }
 
     linuxX64 {
         binaries.executable {
-            entryPoint = "dev.zeteny.ticketrail.main"
+            entryPoint = "dev.zeteny.ticketrail.server.main"
         }
     }
 
     linuxArm64 {
         binaries.executable {
-            entryPoint = "dev.zeteny.ticketrail.main"
+            entryPoint = "dev.zeteny.ticketrail.server.main"
         }
     }
 

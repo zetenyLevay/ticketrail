@@ -1,9 +1,5 @@
-package dev.zeteny.ticketrail.data.local.database
+package dev.zeteny.ticketrail.data
 
-import dev.zeteny.ticketrail.data.Status
-import dev.zeteny.ticketrail.data.Subtask
-import dev.zeteny.ticketrail.data.TicketEntity
-import dev.zeteny.ticketrail.data.TicketKind
 import kotlinx.datetime.LocalDate
 import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.buildJsonObject
