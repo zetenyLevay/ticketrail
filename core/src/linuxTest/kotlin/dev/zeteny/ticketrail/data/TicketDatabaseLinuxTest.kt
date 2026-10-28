@@ -1,6 +1,5 @@
-package dev.zeteny.ticketrail.data.local.database
+package dev.zeteny.ticketrail.data
 
-import dev.zeteny.ticketrail.data.getRoomDatabase
 import kotlinx.cinterop.ExperimentalForeignApi
 import kotlinx.coroutines.test.runTest
 import okio.FileSystem

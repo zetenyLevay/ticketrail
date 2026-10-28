@@ -1,6 +1,5 @@
-package dev.zeteny.ticketrail.data.local.database
+package dev.zeteny.ticketrail.data
 
-import dev.zeteny.ticketrail.data.getRoomDatabase
 import kotlinx.coroutines.test.runTest
 import java.io.File
 import kotlin.test.AfterTest
